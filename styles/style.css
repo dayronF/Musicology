@@ -27,7 +27,7 @@ nav .search {
 }
 /*Imagen primer fondo*/
 .banner {
-    background-image: url(./assets/images/background.png);
+    background-image: url(../assets/images/background.png);
   background-size: cover;
   background-position: center;
   height: 700px;
