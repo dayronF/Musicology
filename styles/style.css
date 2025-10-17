@@ -3,7 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Navegador*/
+
+.vaa {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Navegador */
 nav {
   background-color: rgba(0, 0, 0, 0.822);
   width: 100%;
@@ -11,62 +17,63 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 10px; 
 }
 
 nav .logo {
-  margin-left: 100px;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin: 0px; 
 }
 
 nav .search {
   width: 40px;
   height: 40px;
-  margin-right: 60px;
-  margin-top: 30px;
+  margin: 0;
 }
-/*Imagen primer fondo*/
+
+/* Imagen primer fondo */
 .banner {
-    background-image: url(../assets/images/background.png);
+  background-image: url(../assets/images/background.png);
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 87vh; 
   width: 100%;
   display: flex;
   align-items: center;
   color: white;
 }
-/* informacion musicology*/
+
+/* informacion musicology */
 .principal {
-  margin-top: 295px;
-  margin-left: 100px;
-  width: 590px;
+  margin: 0 20px;
+  max-width: 600px;
 }
 .principal h1 {
-  font-size: 95px;
+  font-size: 8vw; 
   font-family: oswald, sans-serif;
 }
-
 .principal p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
   font-family: Montserrat, sans-serif;
 }
 .principal button {
   background-color: rgb(255, 115, 0);
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   color: white;
-  margin-top: 40px;
-  width: 280px;
+  margin-top: 30px;
+  width: 80%;
+  max-width: 280px;
   height: 60px;
 }
-/* Dance tour*/
+
+/* Dance tour */
 .centro {
   width: 100%;
-  height: 830px;
+  padding: 50px 20px;
   background-color: rgb(255, 102, 0);
   display: flex;
   align-items: center;
@@ -74,157 +81,140 @@ nav .search {
 }
 .dance {
   color: white;
-  width: 800px;
-  height: 200px;
-  padding-top: 50px;
-  margin-bottom: 80px;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .dance h1 {
   font-family: oswald, sans-serif;
-  font-size: 70px;
-  text-align: center;
-  transform: scaleY(2);
-  transform: scalex(0.8);
+  font-size: 6vw;
+}
+.dance p {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
-.dance p {
-  width: 100%;
-  margin-top: 20px;
-  font-family: Montserrat, sans-serif;
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  line-height: 1.1;
-}
-/* America, asia...*/
+/* America, asia... */
 .dances {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 500px;
-  width: 1300px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
 }
 .dance1 {
-  width: 400px;
-  height: 300px;
+  flex: 1 1 300px;
+  max-width: 400px;
 }
 .dance1 img {
-  background-size: cover;
-  background-position: center;
   width: 100%;
-  display: flex;
-  align-items: center;
-  color: white;
+  display: block;
 }
 .text {
-  padding: 30px;
+  padding: 20px;
   color: white;
   background-color: rgba(41, 41, 41, 0.973);
 }
 .text h1 {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform: scaleY(1.5);
+  font-size: 24px;
+  margin-bottom: 15px;
 }
-
 .text p {
-  font-size: 20px;
+  font-size: 16px;
   text-align: justify;
 }
-/* Pricing*/
+
+/* Pricing */
 .pricing {
   width: 100%;
-  height: 830px;
+  padding: 50px 20px;
   background-color: rgba(41, 41, 41, 0.973);
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
 .prin {
   color: white;
-  width: 800px;
-  height: 200px;
-  padding-top: 50px;
-  margin-bottom: 80px;
+  max-width: 800px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .prin h1 {
   font-family: oswald, sans-serif;
-  font-size: 70px;
-  text-align: center;
-  transform: scaleY(2);
-  transform: scalex(0.8);
+  font-size: 6vw;
 }
-
 .prin p {
-  width: 100%;
-  margin-top: 20px;
   font-family: Montserrat, sans-serif;
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  line-height: 1.1;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
-/* Planes*/
+/* Planes */
 .dan {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 500px;
-  width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
 }
 .da {
-  width: 370px;
-  height: 470px;
+  flex: 1 1 300px;
+  max-width: 370px;
   background-color: rgb(255, 102, 0);
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   color: white;
   border-radius: 10px;
 }
 .da img {
-  margin-top: 30px;
-  background-position: center;
-  margin-bottom: 30px;
+  width: 100px;
+  margin: 20px auto;
+  display: block;
 }
-
 .da h1 {
-  font-size: 26px;
+  font-size: 22px;
   font-family: oswald, sans-serif;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
-  margin-top: 10px;
-  transform: scaleY(1.5);
+  margin: 15px 0;
 }
-
 .da p {
-  font-size: 20px;
+  font-size: 16px;
   font-family: Montserrat, sans-serif;
 }
-
 .text1 {
-  margin-top: 35px;
-  padding: 20px;
-  color: white;
+  margin-top: 20px;
+  padding: 15px;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
   background-color: rgba(41, 41, 41, 0.973);
 }
-/* pie de pagina*/
+
+/* Pie de pagina */
 footer {
   background-color: rgb(255, 102, 0);
   width: 100%;
-  height: 70px;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: Montserrat, sans-serif;
+  text-align: center;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .principal h1 {
+    font-size: 10vw;
+  }
+  .dance h1,
+  .prin h1 {
+    font-size: 8vw;
+  }
+}
